@@ -1,0 +1,78 @@
+* { margin: auto; padding: 0px; }
+
+.containerI{
+        /* Sólo para centrar el formulario a la página */
+        align-items: center;
+        position: absolute;
+        width: auto;
+        /* Para ver el borde del formulario */
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+        background: rgba(0, 0, 0, .3);
+        font-family: cursive;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+
+}
+
+body{
+    background-image: url(../images/fondo.png);
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.cont{
+    display: flex;
+	justify-content: space-around;
+	margin-top: 1rem;
+}
+
+h1{
+    color: aliceblue;
+}
+
+.input, .anterior, .iniciar, .siguiente{
+	background-color: #EFEFEF;
+	padding: .5rem;
+	margin: .5rem 0;
+	border: none;
+	border-bottom: solid #C8C8C8 .2rem;
+	transition: all .5s;
+}
+
+.anterior:hover {
+    cursor: pointer;
+	background-color: rgb(236, 248, 246);
+}
+
+.anterior{
+    background-color: teal;
+    border-radius: 1rem;
+    color: rgb(0, 0, 0);;
+
+}
+
+.iniciar:hover{
+    cursor: pointer;
+	background-color: rgb(13, 111, 185);
+}
+
+.siguiente:hover{
+    cursor: pointer;
+	background-color: rgb(236, 248, 246);
+}
+
+.siguiente{
+    background-color: teal;
+    border-radius: 1rem;
+    color: rgb(0, 0, 0);
+
+}

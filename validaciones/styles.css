@@ -1,0 +1,58 @@
+form{
+
+    align-items: center;
+    position: absolute;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background: rgba(0, 0, 0, .3);
+    font-family: cursive;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+body{
+background-image: url(fondo.png);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+form .ingresar {
+color: #EDA135;
+align-items: center;
+width: 180px;
+height: 40px;
+
+}
+
+input[type="submit"]{
+background: linear-gradient(#FFDA63, #FFB940);
+border: 0;
+color: brown;
+opacity: 0.8;
+cursor: pointer;
+border-radius: 20px;
+margin-bottom: 0;
+}
+
+input[type="submit"]:hover{
+opacity: 1;
+}
+
+input[type="submit"]:active{
+transform: scale(0.95);
+}
+
+.form_boton {
+display: flex;
+justify-content: space-around;
+margin-top: 1rem;
+}
+
+input{
+background-color: rgb(233, 227, 227, .5);
+}

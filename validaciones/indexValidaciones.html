@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script type="text/javascript" src="validaciones.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <title>Validaciones</title>
+</head>
+
+
+<body>
+        
+
+        <form id="formulario01" action="success.php" method="POST"
+                onsubmit="return validarCamposObligatorios()">
+                <br>
+                <br>
+                <label for="cedula">Cedula (*)</label>
+                <input type="text" id="cedula" name="cedula" value="" maxlength="10"
+                        placeholder="Ingrese el número de cedula ..."
+                        onkeypress="ValidarNumeros(event,'mensajeCedula',this)" />
+                <br>
+                <span size=4 id="mensajeCedula"></span>
+                <br>
+                <br>
+                <label for="nombres">Nombres (*)</label>
+                <input type="text" id="nombres" name="nombres" value="" placeholder="Ingrese sus dos nombres
+                ..." onkeypress="ValidarLetras(event,'mensajeNombres',this)" />
+                <br>
+                <span id="mensajeNombres"></span>
+                <br>
+                <br>
+                <label for="apellidos">Apelidos (*)</label>
+                <input type="text" id="apellidos" name="apellidos" value="" placeholder="Ingrese sus dos apellidos
+                        ..." onkeypress="ValidarLetras(event,'mensajeApellidos',this)" />
+                <br>
+                <span id="mensajeApellidos"></span>
+                <br>
+                <br>
+                <label for="direccion">Dirección (*)</label>
+                <input type="text" id="direccion" name="direccion" value="" placeholder="Ingrese su dirección ..." />
+                <br>
+                <span id="mensajeDireccion"></span>
+                <br>
+                <br>
+                <label for="telefono">Teléfono (*)</label>
+                <input type="text" id="telefono" name="telefono" value="" placeholder="Ingrese su número telefónico
+                        ..." onkeypress="ValidarTelefono(event,'mensajeTelefono',this)" />
+                <br>
+                <span id="mensajeTelefono"></span>
+                <br>
+                <br>
+                <label for="fecha">Fecha Nacimiento (*)</label>
+                <input type="text" id="fechaNacimiento" name="fechaNacimiento" value="" placeholder="Ingrese su
+                        fecha de nacimiento ..." onkeypress="validarFecha(event, 'mensajeFecha',this)" />
+                <br>
+                <span id="mensajeFecha"></span>
+                <br>
+                <br>
+                <label for="correo">Correo electrónico (*)</label>
+                <input type="text" id="correo" name="correo" value="" placeholder="Ingrese su correo electrónico
+                        ..." onkeypress="ValidarCorreo(event,'mensajeCorreo',this)" />
+                <br>
+                <span id="mensajeCorreo"></span>
+                <br>
+                <br>
+
+                <div class="form_boton"> 
+                        <input type="submit" class="ingresar" id="crear" name="crear" value="Aceptar" />
+                </div>
+
+        </form>
+        
+</body>
+
+</html>
